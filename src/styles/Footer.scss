@@ -1,0 +1,77 @@
+.footer {
+  margin-top: 100px;
+  padding: 40px 70px;
+  background-color: #222;
+  color: #ffffff;
+
+  &__top {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+  }
+  &__logo {
+    color: inherit;
+    text-decoration: none;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Urbanist", sans-serif;
+  }
+  &__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: justify;
+  }
+  h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  span {
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 14px;
+    &:hover {
+      color: #fdcf41;
+    }
+  }
+  &__icon {
+    padding: 5px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    &:hover {
+      color: #fdcf41;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 70px;
+    justify-content: flex-end;
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    span {
+      margin: 0 20px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer {
+    padding: 20px 40px;
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+    }
+    &__bottom {
+      margin-top: 0;
+    }
+  }
+}

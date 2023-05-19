@@ -1,0 +1,33 @@
+.featureProduct {
+  margin: 100px 100px;
+  &__top {
+    display: flex;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .featureProduct__bottom{
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .featureProduct {
+    margin: 70px 50px;
+    &__top {
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+    &__bottom{
+      flex-direction: column;
+    }
+  }
+}
