@@ -44,6 +44,17 @@
       border-bottom: 4px solid #fdcf41;
     }
   }
+  &__inputItem {
+    margin: 25px 0;
+    input {
+      margin-right: 15px;
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+    label {
+      cursor: pointer;
+    }
+  }
   &__option {
     display: flex;
     justify-content: flex-end;
@@ -61,6 +72,5 @@
 @media only screen and (max-width: 1024px) {
   .products {
     padding: 30px 20px;
-    
   }
 }
